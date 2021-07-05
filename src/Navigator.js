@@ -4,30 +4,30 @@ import {
 } from 'react-navigation'
 import { createDrawerNavigator } from 'react-navigation-drawer'
 
-import Home from './screens/Home'
-import Produto from './screens/Produto'
-import Carrinho from './screens/Carrinho'
+import Dashboard from './screens/Dashboard'
 import Menu from './components/Menu'
+import DefaultCards from './screens/DefaultCards'
+import PricingTables from './screens/Pricing'
+import ContentBlocks from './screens/Content'
+import Forms from './screens/Forms'
 
 const menuConfig = {
-    initialRouteName: 'Home',
+    initialRouteName: 'Dashboard',
     contentComponent: Menu,
     contentOptions: {
         labelStyles: { 
             fontWeight: 'normal',
             fontSize: 20
         },
-        activeLabelStyle: {
-            color: 'red',
-            fontWeight: 'bold'
-        }
     }
 }
 
 const menuRoutes = {
-    Home,
-    Produto,
-    Carrinho
+    Dashboard,
+    DefaultCards,
+    PricingTables,
+    ContentBlocks,
+    Forms
 }
 
 const menuNavigator = createDrawerNavigator(menuRoutes, menuConfig)

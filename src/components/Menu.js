@@ -6,7 +6,7 @@ export default props => {
   return(
       <ScrollView>
           <View style={styles.header}>
-              <Text style={styles.title}>Bem vindo</Text>
+              <Text style={styles.title}>COLLECTIVE</Text>
           </View>
           <DrawerItems {...props} />
       </ScrollView>
@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
       borderColor: '#DDD'
   },
   title: {
-      color: '#000',
+      color: '#fff',
       fontSize: 30,
-      paddingTop: 70,
-      padding: 10
+      padding: 10,
+      backgroundColor: 'blue'
   }
 })

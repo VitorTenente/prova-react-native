@@ -2,20 +2,19 @@ import React from 'react'
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native'
 
 import Icon from 'react-native-vector-icons/FontAwesome'
-
+import Search from './Search'
 
 export default props => {
     return (
-        <View style={styles.container}>
-            <TouchableOpacity onPress={() => props.navigation.openDrawer()}>
-                <Icon name='bars'
-                size={30}/>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => props.navigation.navigate('Home')}>
-                <Text style={styles.textG}>Logo</Text>
-            </TouchableOpacity>
-            
-            <Text style={styles.textG}>Carrinho</Text>
+        <View style={styles.header}>
+            <View style={styles.container}>
+                <TouchableOpacity onPress={() => props.navigation.openDrawer()}>
+                    <Icon name='bars'
+                    size={40}/>
+                </TouchableOpacity>
+                <Icon name='user' size={40}/>
+        </View>        
+            <Search/>
         </View>
         
     )
@@ -26,8 +25,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         padding: 20,
+        margin: 10
     },
-    textG: {
-        fontSize: 20
+    header: {
+        backgroundColor: '#fff',
+        // position: 'absolute',
+        // top: 0,
+        // zIndex: 10
     }
 })

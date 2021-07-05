@@ -1,0 +1,10 @@
+1 - A) Componente: Parte do código que pode ser reutilizado, pode ser
+composto de outros componentes menores. Como por exemplo um botão, um input e até um título.
+
+1 - B) JSX: Modo de escrever códigos em javascript e também tags do react native.
+
+1 - C) Método render: Método onde tudo que estiver dentro será renderizado.
+
+1 - D) Props: No componente funcional, a propriedade daquele trecho. Feito para a comunicação com outros arquivos.
+
+1 - E) State: No componente de classes, o estado que controla o component.
